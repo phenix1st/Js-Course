@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id = "title">hello world</h1>
+    <input type="text" name="" id="prompt" placeholder="Enter your string :" >
+    <button id= "submit">submit</button>
+
+    <script>
+        var  str = document.getElementById("submit").addEventListener("click", function(){
+            
+            var allcaps = str.toUpperCase()
+
+            var replace = allcaps.replace("o", "y");
+
+            var reversestr = replace.split("").reverse().join("");
+        
+            document.getElementById("title").innerHTML = `${reversestr} -- ${replace} -- ${allcaps}`;
+        
+        })    
+
+    </script>
+</body>
+</html>
