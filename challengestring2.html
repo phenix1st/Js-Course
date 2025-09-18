@@ -11,11 +11,11 @@
     <button id= "submit">submit</button>
 
     <script>
-        var  str = document.getElementById("submit").addEventListener("click", function(){
-            
+        document.getElementById("submit").addEventListener("click", function(){
+            var  str =document.getElementById("prompt").value;
             var allcaps = str.toUpperCase()
 
-            var replace = allcaps.replace("o", "y");
+            var replace = allcaps.replace("O", "y");
 
             var reversestr = replace.split("").reverse().join("");
         

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--<H3 id="result">hello world</H3>
+    <input type="text" id ="result" placeholder="enter yout string">
+    <script>
+        var mystr = document.getElementById("result").innerHTML;
+        console.log(mystr);
+        var replacestr = mystr.replace("o", "y");
+        var reversestr = mystr.split("").reverse().join("");
+
+        document.getElementById("result").innerHTML = ` ${replacestr} -- ${ reversestr}`
+    </script> -->
+    <H3 id="re">hello world</H3>
+    <input type="text" id ="result" placeholder="enter yout string">
+    <button onclick="taketext()">text</button>
+    <script>
+        function taketext( ) {
+        var mystr = document.getElementById("result").value; //this way it will takr thr value from the input-->
+        console.log(mystr);
+        var replacestr = mystr.replace("o", "y");
+        var reversestr = mystr.split("").reverse().join("");
+
+        document.getElementById("re").innerHTML = ` ${replacestr} -- ${ reversestr}`
+        }
+    </script>
+</body>
+</html>
